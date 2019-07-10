@@ -8,13 +8,12 @@
   position: relative;
 
   @media (max-width: 577px) {
-    display: none;
-    position: absolute;
+    clip-path: polygon(0% 80px, 100% 0px, 100% 600px, 0% 548px);
+    padding-top: 50px;
   }
 
-  @media (max-width: 376px) {
-    height: 1242px;
-    clip-path: polygon(0% 34px, 100% 0px, 100% 1242px, 0% 1191px);
-    padding-top: 45px;
+  @media (max-width: 450px) {
+    clip-path: polygon(0% 40px, 100% 0px, 100% 600px, 0% 575px);
+    padding-top: 60px;
   }
 }
