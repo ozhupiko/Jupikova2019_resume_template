@@ -1,0 +1,10 @@
+mixin process(_process)
+    div(id="process").process
+        .container
+            +title("process", shape_white, 'gavel', 'skills')
+            .row.justify-content-between.process--mg
+               each item in _process
+                  div(class=`process__work${item.number}`).process__work
+                     i(class=`fa${item.letter} fa-${item.icon} process__icon1--${item.number}`).process__icon1
+                     p.process__name!= item.name
+                  i(class=`process__icon1--${item.number}`).fa-arrow-right.fas.process__icon2

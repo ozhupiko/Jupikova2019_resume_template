@@ -1,0 +1,14 @@
+mixin services(_services)
+    div(id="services").services
+        .container
+            +title("services", shape_black, 'wrench', 'about')
+            .row.services--mg
+                each item in _services
+                    .col-xl-3.col-sm-6.d-flex.align-items-center.justify-content-center
+                        .services__designation
+                             div(class=`ellipse__${item.color}`).ellipse
+                                img(src=item.img)(class=`services__img--${item.mod}`).services__img
+                                i(class=`fa${item.letter} fa-${item.icon} services__icon--${item.color}`).services__icon
+                             h2.services__work!= item.work
+                             p.text!= item.text
+            

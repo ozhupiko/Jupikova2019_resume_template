@@ -1,0 +1,17 @@
+mixin popup(_mod)
+    div(class= (_mod != '' && _mod != undefined) ? `popup--${_mod}` : '').popup
+        .container
+            .popup__panel
+                .popup__close
+                    <i class="fas fa-times"></i>
+                .popup__body
+                    if block
+                        block
+mixin popup__work(_mod, _img)
+    div(class= (_mod != '' && _mod != undefined) ? `popup--${_mod}` : '').popup__work
+        .container
+            .popup__work__panel
+                .popup__work__close
+                    <i class="fas fa-times"></i>
+                .popup__work__body
+                   

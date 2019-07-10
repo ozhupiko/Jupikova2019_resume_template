@@ -1,0 +1,37 @@
+.logo {
+    &:hover {
+        opacity: 0.5;
+    }
+
+    &__after {
+        width: 41px;
+        height: 41px;
+        background-color: white;
+        margin-top: 12px;
+        @media (max-width: 577px) {
+           margin-left: 15px;
+              }
+
+    }
+
+    &__litter {
+        color: #AACCB5;
+        font-family: "KlavikaBold", sans-serif;
+        font-size: 59px;
+        font-weight: 600;
+        line-height: 61px;
+        text-transform: uppercase;
+        margin-top: -10px;
+        margin-left: -1px;
+
+    }
+
+    &__text {
+        color: white;
+        font-family: "KlavikaBold", sans-serif;
+        font-size: 55px;
+        font-weight: 700;
+        font-style: italic;
+        margin: 0px;
+    }
+}

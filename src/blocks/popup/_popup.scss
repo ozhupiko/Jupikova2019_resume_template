@@ -1,0 +1,113 @@
+.popup {
+    display: none;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 11.5%;
+    max-width: 100%;
+
+    @media (max-width: 577px) {
+        left: 20% !important;
+
+    }
+
+    &__panel {
+        margin: 0 auto;
+        padding: 20px 405px 50px 405px;
+        max-width: 100%;
+        border: 1px solid black;
+        border-radius: 10px;
+        background: white;
+        position: relative;
+
+        @media (max-width: 577px) {
+            padding: 20px 0px 50px 0px;
+
+        }
+    }
+
+    &__close {
+        color: #A5CDB8;
+        text-align: right;
+        font-size: 40px;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+
+        &:hover {
+            transform-origin: center;
+            transform: rotateZ(180deg);
+        }
+    }
+
+    &__body {
+        h3 {
+            text-align: center;
+
+            @media (min-width: 576px) {
+                margin: auto;
+            }
+        }
+    }
+}
+
+.popup__work {
+    visibility: hidden;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    height: 2000px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-top: 250px;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0% 0px, 100% 75px, 100% 2000px, 0% 2000px);
+
+    @media (max-width: 577px) {
+        padding-top: 0px;
+    }
+
+    &__panel {
+        margin: 370px auto;
+        max-width: 100%;
+        position: relative;
+
+    }
+
+    &__close {
+        color: #A5CDB8;
+        text-align: right;
+        font-size: 40px;
+        cursor: pointer;
+
+        position: absolute;
+        top: 17px;
+        right: 92px;
+
+        @media (max-width: 577px) {
+            top: 2%;
+            right: 6%;
+        }
+
+        &:hover {
+            transform-origin: center;
+            transform: rotateZ(180deg);
+        }
+
+    }
+
+    &__body {
+        width: 990px;
+        height: 550px;
+        background-color: white;
+        margin-left: 88px;
+
+        @media (max-width: 577px) {
+            width: 97%;
+            height: 450px;
+            background-color: white;
+            margin-left: 10px;
+        }
+    }
+}

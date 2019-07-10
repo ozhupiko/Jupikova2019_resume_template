@@ -1,0 +1,20 @@
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 95;
+    @media (max-width: 376px) {
+        max-width: 376px;
+         }
+  
+    &__container{
+        width: 100%;
+        padding: 10px 0px;
+        
+    }
+
+    &--scroll{
+        background: #A5CDB8;
+    }
+}

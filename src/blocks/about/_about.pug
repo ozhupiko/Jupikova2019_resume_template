@@ -1,0 +1,9 @@
+
+mixin about(_text)
+    div(id="about").about
+        .container
+            +title("About Me", shape_black, 'user-alt', 'about')
+            p.about__text!= _text
+            if block
+                block
+            

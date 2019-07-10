@@ -1,0 +1,107 @@
+.experience {
+    background-color: #eeeeee;
+    height: 750px;
+    shape-outside: polygon(0% 80px, 100% 0px, 100% 600px, 0% 520px);
+    clip-path: polygon(0% 0px, 100% 0px, 100% 650px, 0% 750px);
+    margin-top: -201px;
+    padding-top: 23px;
+    position: relative;
+
+    @media (max-width: 450px) {
+        margin-top: 0px;
+        clip-path: polygon(0% 0px, 100% 0px, 100% 1200px, 0% 1200px);
+        height: 1200px;
+    }
+
+    &__years {
+        max-width: 370px;
+        text-align: center;
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+
+        @media (max-width: 577px) {
+            font-size: 15px;
+        }
+
+        @media (max-width: 450px) {
+            margin-top: 30px;
+            max-width: 100%;
+        }
+    }
+
+
+
+    &__work {
+        background-color: white;
+        padding: 18px;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        height: 350px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @media (max-width: 577px) {
+            padding: 10px;
+        }
+
+        @media (max-width: 450px) {
+            height: 265px;
+
+        }
+    }
+
+    &--mg {
+        margin-top: 50px;
+        margin-bottom: 40px;
+
+        @media (max-width: 450px) {
+            margin-top: 0px;
+        }
+    }
+
+    &--shadow {
+        border-radius: 2px;
+
+    }
+
+}
+
+.years {
+    background-color: #52edc7;
+    margin: 0;
+    padding: 0 25px;
+
+}
+
+.company {
+
+    color: #4a4a4a;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.position {
+    color: #888b90;
+    font-weight: 400;
+    margin-bottom: 25px;
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.text {
+    text-align: center;
+    color: #888b90;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 18px;
+    margin-top: 0;
+
+
+}

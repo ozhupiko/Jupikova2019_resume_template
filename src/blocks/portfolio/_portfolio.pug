@@ -1,0 +1,76 @@
+mixin portfolio(_text, _portfolio__all, _menu, _active, _portfolio__web, _portfolio__UI, _portfolio__photo, _mod)
+    div(id="portfolio").portfolio
+        .container
+            +title("portfolio", shape_white, 'camera', 'skills')
+            .row.portfolio--mg
+               p.portfolio__text!= _text
+               nav.portfolio__menu
+                   ul.menu__list.d-flex.align-items-center.justify-content-center
+                      each item in _menu
+                        li(class= (item.mod != '') ? `menu__item--${item.mod}` : '').menu__item!= item.val
+               .portfolio__work="My work"
+            if block
+               block                    
+
+
+                       
+            .portfolio__all.portfolio--mg1.active
+              
+                each item in _portfolio__all
+                    .coll1.coll
+
+                        img(src=`${item.img1}`, alt="").img__work1
+                        .work__after1
+                            h1.project__name!= item.project__name1
+                            h2.work__name!= item.work__name1
+                            +btn("View", `${item.btn1}`)
+                    .coll2.coll   
+                        .work__after2
+                            h1.project__name!= item.project__name1
+                            h2.work__name!= item.work__name2
+                            +btn("View", `${item.btn2}`)
+
+
+                        img(src=`${item.img2}`, alt="").img__work2
+                  
+
+                .portfolio__web.portfolio--mg1
+                    each item in _portfolio__web
+                        .coll1.coll
+
+                            img(src=`${item.img1}`, alt="").img__work1
+                            .work__after3.work__after3--mobil
+                               h1.project__name--mg.project__name!= item.project__name
+                               h2.work__name!= item.work__name
+                               +btn("View", `${item.btn1}`)
+                            
+                            
+
+                .portfolio__UI.portfolio--mg1
+                    each item in _portfolio__UI
+                        .coll1.coll
+
+                            img(src=`${item.img1}`, alt="").img__work1
+                            .work__after3.work__after3--mobil
+                               h1.project__name--mg.project__name!= item.project__name
+                               h2.work__name!= item.work__name
+                               +btn("View", `${item.btn1}`)
+               
+               
+               
+               
+                .portfolio__photo.portfolio--mg1
+                    each item in _portfolio__photo
+                        .coll1.coll
+
+                            img(src=`${item.img1}`, alt="").img__work1
+                            .work__after3.work__after3--mobil
+                               h1.project__name--mg.project__name!= item.project__name
+                               h2.work__name!= item.work__name
+                               +btn("View", `${item.btn1}`)
+                   
+
+
+
+                           
+           

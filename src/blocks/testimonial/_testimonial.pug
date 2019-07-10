@@ -1,0 +1,26 @@
+mixin testimonial(_testimonial, _img)
+    div(id="testimonial").testimonial
+        .container
+            +title("testimonial", shape_black, 'bullhorn', 'about')
+            .row
+              i.fas.fa-chevron-left.testimonial__icon
+              .testimonial__slide
+                each item in _testimonial
+                  .testimonial__card
+                      p.testimonial__quotes!='"'
+                      .row
+                         .col-xl-6.col-sm-12
+                            img(src= item.img).testimonial__img
+                         .col-xl-6.col-sm-12
+                            p.testimonial__text!=item.text
+                            p.testimonial__autor!=item.autor
+                      p.testimonial__quotes!='"'
+              i.fas.fa-chevron-right.testimonial__icon
+            h3.testimonial__clients!="Clients"
+            .testimonial__line
+            .row
+                .testimonial__logo.d-flex.justify-content-between
+                    each item in _img
+                       .clients__logo
+                          a(href=item.index).clients__link
+                            img(class= `clients__img--${item.num}`,src=item.img).clients__img

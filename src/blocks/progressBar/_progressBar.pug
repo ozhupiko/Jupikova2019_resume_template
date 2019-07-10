@@ -1,0 +1,38 @@
+mixin progressBar(_skills)
+   
+         .row 
+            .dws-progress-bar1
+            
+            .dws-progress-bar2
+            
+            .dws-progress-bar3
+            .dws-progress-bar4
+            .dws-progress-bar5
+            .dws-progress-bar6
+            .row
+              each item in _skills
+                 p(class=`percent--${item.number}`).percent!=item.percent
+
+            .row
+              each item in _skills     
+                 p(class=`skills--${item.number}`).name!=item.skills
+           
+            
+
+
+
+
+
+
+
+
+
+
+            //- .set-size.charts-container
+            //-  div(class= `progress-${item.percent}`).pie-wrapper.style-2
+            //-     span.label!= item.percent + '%'
+            //-     .pie
+            //-         .left-side.half-circle
+            //-         .right-side.half-circle
+            //-     .shadow
+            //-     p.skill!=item.skills

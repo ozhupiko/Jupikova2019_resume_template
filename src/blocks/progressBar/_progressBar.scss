@@ -1,0 +1,128 @@
+.skill {
+
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 41px;
+  text-transform: uppercase;
+  margin-top: 200px;
+
+  @media (max-width: 376px) {
+    margin-left: -42px;
+    margin-top: 0px;
+  }
+}
+
+.dws-progress-bar1 {
+  position: absolute;
+  top: 33%;
+  left: 10%;
+
+  font-size: 40px;
+  font-family: "Verdana", sans-serif;
+  font-weight: bold;
+  color: white;
+
+}
+
+.dws-progress-bar2 {
+  position: absolute;
+  top: 33%;
+  left: 22%;
+  font-size: 40px;
+  font-family: "Verdana", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.dws-progress-bar3 {
+  position: absolute;
+  top: 33%;
+  left: 34%;
+  font-size: 40px;
+  font-family: "Verdana", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.dws-progress-bar4 {
+  position: absolute;
+  top: 33%;
+  left: 46%;
+  font-size: 40px;
+  font-family: "Verdana", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.dws-progress-bar5 {
+  position: absolute;
+  top: 33%;
+  left: 58%;
+  font-size: 40px;
+  font-family: "Verdana", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.dws-progress-bar6 {
+  position: absolute;
+  top: 33%;
+  left: 70%;
+  font-size: 40px;
+  font-family: "Verdana", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.percent {
+
+  font-size: 39px;
+  font-family: "Verdana", sans-serif;
+  font-weight: bold;
+  color: white;
+  margin-top: 87px;
+  margin-right: 75px;
+
+  &:first-child {
+    margin-left: 63px;
+  }
+
+}
+
+.name {
+
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: white;
+  margin-top: 39px;
+  margin-right: 60px;
+
+
+  &:first-child {
+    margin-left: 63px;
+  }
+}
+
+.skills--4 {
+  margin-left: -13px;
+}
+
+.skills--5 {
+  margin-left: 11px;
+}
+
+.skills--6 {
+  margin-left: 34px;
+}
+
+.percent--4 {
+  margin-left: 11px;
+}
+
+.percent--6 {
+  margin-left: -11px;
+}

@@ -1,0 +1,16 @@
+mixin experience(_experience)
+    div(id="experience").experience
+          
+        .container
+            +title("Work experience", shape_black, 'briefcase', 'about')
+            
+            .row.experience--mg
+                each item in _experience
+                    .col-xl-4.col-sm-12.align-items-center.justify-content-center.ppp
+                        .experience__years
+                            h3.years!= item.years
+                        .experience__work
+                            h2.company!= item.company
+                            h3.position!= item.position
+                            p.text!= item.text
+            

@@ -1,0 +1,6 @@
+mixin navigation(_nav, _active, _href)
+    nav.navigation
+        ul.navigation__list
+            each item, index in _nav
+                li.navigation__item
+                    a(href= item.href, class= ((index == _active - 1) ? "navigation__link--active" : '', `navigation__link--${item.class}`)).navigation__link= item.val

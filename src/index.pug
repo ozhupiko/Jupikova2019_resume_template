@@ -1,0 +1,48 @@
+include ./variables.pug
+include ./blocks/_blocks.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Kong
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+         link(rel="stylesheet", href="./css/style.css")
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    body
+        +menu()
+           +logo("k", "kong")
+           +burger
+           +popup()
+            +navigation(menu, 1)
+        +header("I’m John Doe", " UX - UI Designer","img/Ellipse.png")
+            +btn1(`${links}`, 'Download My Resume', "secondary")
+        +about("Dyin' ain't much of a livin', boy. here. put that in your report!\" and \"i may have found a way out of here. you want a guarantee, buy a toaster. here. put that in your report!\" and \"i may have found a way out of here. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. don't p!ss down my back and tell me it's raining. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. don't p!ss down my back and tell me it's raining. this is my gun, clyde! man's gotta know his limitations. ever notice how sometimes you come across somebody you shouldn't have f**ked with? well, i'm that guy.")
+            +social(icon, href)
+        +skills
+            +progressBar(progress)
+        +education(education)
+        +experience(experience)
+        +services(services)
+        +portfolio("You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.", portfolio, portfolio__menu, 1, portfolio__web, portfolio__UI, portfolio__photo)
+           +popup__work("web1", img)
+        +process(process)
+        +testimonial(testimonial, img_logo)
+        +blog(blog)
+        +contact(contact)
+        +download(download)
+        +footer("&copy; Kong 2019")
+        
+        script(src='https://code.jquery.com/jquery-3.4.1.min.js')
+        script(src='script.js')
+        script(src="//code.jquery.com/jquery-1.11.0.min.js")
+        script(src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+        script(src="slick/slick.min.js")
+        script(src="plugin.js")

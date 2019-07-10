@@ -1,0 +1,4 @@
+mixin btn( _text, _mod = '')
+    a.btn(href="http://", class= (_mod != '') ? `btn--${_mod}` : '', title=_text )= _text
+mixin btn1(_href, _text, _mod = '')
+    a.btn(href=_href, class= (_mod != '') ? `btn--${_mod}` : '', title=_text, download)= _text    

@@ -1,0 +1,170 @@
+.education {
+    background-color: #eeeeee;
+    height: 1000px;
+    shape-outside: polygon(0% 80px, 100% 0px, 100% 600px, 0% 520px);
+    clip-path: polygon(0% 0px, 100% 85px, 100% 800px, 0% 800px);
+    margin-top: -113px;
+    padding-top: 113px;
+    position: relative;
+   
+          @media (max-width: 577px) {
+            clip-path: polygon(0% 0px, 100% 52px, 100% 1175px, 0% 1175px);
+            margin-top: -51px;
+            padding-top: 65px;
+            height: 1175px;
+              }
+              @media (max-width: 450px) {
+                clip-path: polygon(0% 44px, 100% 68px, 100% 1175px, 0% 1175px);
+               
+                  }
+          
+    &__years {
+        max-width: 162px;
+        text-align: center;
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 36px;
+        margin: auto;
+        margin-bottom: 40px;
+        @media (max-width: 577px) {
+            font-size: 17px;
+            margin-top: 34px;
+              }
+    }
+
+    &__name {
+        max-width: 370px;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        background-color: #52edc7;
+        position: relative;
+        z-index: 1;
+        padding: 10px 20px;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5);
+        @media (max-width: 450px) {
+            max-width: 100%;
+              }
+
+        &::after {
+            width: 50px;
+            height: 50px;
+            background-color: #52edc7;
+            position: absolute;
+            transform: rotate(45deg);
+            left: 44%;
+            top: -7%;
+            content: '';
+            z-index: -1;
+            @media (max-width: 577px) {
+                left: 41%;
+                top: -30%;
+                 }
+            @media (max-width: 450px) {
+                left: 43%;
+                top: -39%;
+                 }
+            @media (max-width: 376px) {
+                left:  41%;
+                top: -30%;
+                 }
+        }
+
+    }
+
+    &__text {
+        background-color: white;
+        padding: 20px;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+        @media (max-width: 577px) {
+            padding: 10px;
+            
+              }
+    }
+
+    &--mg {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        @media (max-width: 577px) {
+            margin-top: 0px;
+            
+              }
+    }
+
+    &--shadow {
+        border-radius: 2px;
+
+    }
+
+    &--line {
+        &::after {
+            width: 238px;
+            height: 4px;
+            background-color: #dcdcdf;
+            content: '';
+            z-index: -1;
+            position: absolute;
+            bottom: 25%;
+            left: 43%;
+            @media (max-width: 577px) {
+                width: 40%;
+    bottom: 1%;
+    left: 30%;
+                  }
+        }
+    }
+}
+
+.years {
+    background-color: #52edc7;
+    margin: 0;
+    padding: 0 25px;
+}
+
+.graduated {
+    background-color: #4ad7b4;
+    margin: 0;
+    padding: 0 25px;
+}
+
+.speciality {
+
+    color: #4a4a4a;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    @media (max-width: 577px) {
+        font-size: 13px;
+        line-height: 19px;
+          }
+}
+
+.university {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 0;
+    @media (max-width: 577px) {
+        font-size: 13px;
+       
+          }
+}
+
+.text {
+    text-align: center;
+    color: #888b90;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 18px;
+    margin-top: 0;
+    @media (max-width: 450px) {
+        line-height: 23px !important;
+        font-size: 15px !important;
+        text-align: justify !important;
+        margin-bottom: 0;
+          }
+}

@@ -1,0 +1,26 @@
+mixin contact(_contact)
+    div(id="contact").contact
+        .container
+            +title("contact", shape_black, 'comment', 'about')
+            .row.contact--mg
+                .col-xl-4.col-sm-12
+                  h2.contact__say!= "Say Hi to Me"
+                  .contact__line
+                  p.contact__adress!= "Orchard Park, Long Bennington, <br> Newark, Lincolnshire <br> NG23 5DQ, United Kingdom"
+                  each item in _contact
+                     a(href=item.index, class=`contact__${item.class}`).contact__link!= item.text
+                .col-xl-8.col-sm-12
+                    .col-xl-6.col-sm-12.col--mg
+                       h2.contact__say!= "Drop Me A Line"
+                       .contact__line.contact__line--mobil
+                    
+                    form(action="", method="get").form
+                        .row
+                           .col-xl-6.col-sm-12
+                             +input("Name", "text")
+                           .col-xl-6.col-sm-12
+                             +input("Email", "email")
+                           .col-12
+                             +textarea("Message")
+                        .form__submit
+                           +btn1("https://Sebastian@mail.com", "Send", "secondary_send")

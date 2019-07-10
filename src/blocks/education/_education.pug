@@ -1,0 +1,19 @@
+mixin education(_education)
+    div(id="education").education
+          
+        .container.education--line
+            +title("Education", shape_black, 'book', 'about')
+            
+            .row.education--mg
+                each item in _education
+                    .col-xl-4.col-sm-12
+                        .education__years
+                            h3.years!= item.years
+                            h4.graduated!= item.graduated
+                        .education__name
+                          
+                           h2.speciality!= item.speciality
+                           h3.university!= item.university
+                        .education__text
+                           p.text!= item.text
+            

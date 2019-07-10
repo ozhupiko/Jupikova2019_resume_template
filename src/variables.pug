@@ -1,0 +1,444 @@
+-
+  var menu = [
+      {
+          val: 'About Me',
+          href: "#about",
+          class: "about"
+      },
+
+       {
+          val: 'My skills',
+          href: "#skills",
+          class: "skills"
+      },
+      {
+          val: 'Education',
+          href: "#education",
+          class: "education"
+      },
+      {
+          val: 'Work Experience',
+          href: "#experience",
+          class: "experience"
+      },
+      {
+          val: 'Services',
+          href: "#services",
+          class: "services"
+      },
+      {
+          val: 'Portfolio',
+          href: "#portfolio",
+          class: "portfolio"
+      },
+      {
+          val: 'Process',
+          href: "#process",
+          class: "process"
+      },
+      {
+          val: 'Testimonial',
+          href: "#testimonial",
+          class: "testimonial"
+      }, 
+      {
+          val: 'Blog',
+          href: "#blog",
+          class: "blog"
+      }, 
+       {
+          val: 'Contact',
+          href: "#contact",
+          class: "contact"
+      }    
+          
+             ]
+  var portfolio__menu = [
+      {
+          val: 'All', 
+          mod: "all"
+      },
+          
+      {
+          val: 'UI Design', 
+          mod: 'UI'
+      },
+      {
+          val: 'Web Design', 
+          mod: 'web'
+      },
+      {
+          val: 'Photography', 
+          mod: 'photo'
+      }
+  ]    
+      
+
+  var shape_black = "img/Shape_black.png"
+  var shape_white = "img/Shape_white.png"
+
+  var icon = ['facebook-f', 'twitter', "linkedin-in", 'dribbble', 'pinterest'] 
+
+  var href = ["http://www.facebook.com", "http://www.twitter.com", "http://www.linkedin.com", "http://www.dribbble.com", "http://www.pinterest.com"]
+     
+ var progress = [
+     {
+         number: "1",
+         percent: '75%', 
+         skills: 'Photoshop'
+     },
+     {
+         number: "2",
+         percent: '68%', 
+         skills: 'Illustrator'
+     },
+     {
+         number: "3",
+         percent: '50%', 
+         skills: 'Photography'
+     },
+     {
+         number: "4",
+         percent: '90%', 
+         skills: 'HTML5/CSS3'
+     },
+     {
+         number: "5",
+         percent: '80%', 
+         skills: 'C4D'
+     },
+     {
+         number: "6",
+         percent: '100%', 
+         skills: 'After effect'
+     },
+ ]
+ var education = [
+     {
+         years: '2012-2013', 
+         graduated: 'Graduated',
+         speciality: 'MASTER DEGREE OF COMPUTER SCIENCE',
+         university: 'Oxford University',
+         text: "This is Photoshop's version Lorem Ipsum. Well, the way they make shows is, they make one show."
+     },
+     {
+         years: '2012-2013', 
+         graduated: 'Graduated',
+         speciality: 'MASTER DEGREE OF COMPUTER SCIENCE',
+         university: 'Oxford University',
+         text: "This is Photoshop's version Lorem Ipsum. Well, the way they make shows is, they make one show."
+     },
+     {
+         years: '2012-2013', 
+         graduated: 'Graduated',
+         speciality: 'MASTER DEGREE OF COMPUTER SCIENCE',
+         university: 'Oxford University',
+         text: "This is Photoshop's version Lorem Ipsum. Well, the way they make shows is, they make one show."
+     }
+ ]
+ var experience = [
+     {
+         years: '2013 - Now', 
+         company: 'Google',
+         position: 'Visual Designer',
+         text: "Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in "
+     },
+     {
+         years: '2013 - Now', 
+         company: 'Google',
+         position: 'Visual Designer',
+         text: "Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in "
+     },
+     {
+         years: '2013 - Now', 
+         company: 'Google',
+         position: 'Visual Designer',
+         text: "Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in "
+     }
+ ]
+ var services = [
+     {
+         img: 'img/copy1_1.png',
+         mod: 'mg1',
+         color: 'orange',
+         letter: 'b',
+         icon: 'html5',
+         work: 'Web Design',
+         text: "I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps."
+     },
+     {
+         img: 'img/copy2.png',
+         mod: 'mg2',
+         color: 'blue',
+         letter: 'r',
+         icon: 'image',
+         work: 'Graphic Design',
+         text: "I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps."
+     },
+     {
+         img: 'img/copy3.png',
+         mod: 'mg3',
+         color: 'green',
+         letter: 's',
+         icon: 'font',
+         work: 'Content Writer',
+         text: "I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps."
+     },
+     
+     {
+         img: 'img/copy4.png',
+         mod: 'mg4',
+         color: 'violet',
+         letter: 's',
+         icon: 'puzzle-piece',
+         work: 'Development',
+         text: "I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps."
+     }
+ ]
+
+ var portfolio = [
+     {
+         img1: 'img/portfolio1@1x.png',
+         img2: 'img/portfolio4@1x.png',
+         project__name1: "Project Name",
+         work__name1: "Web design",
+         work__name2: "UI design",
+         btn1: 'work1',
+         btn2: 'work2',
+     },
+     {
+         img1: 'img/portfolio2@1x.png',
+         img2: 'img/portfolio5@1x.png',
+         project__name1: "Project Name",
+         work__name1: "Web design",
+         work__name2: "UI design",
+         btn1: 'work3',
+         btn2: 'work4',
+     },
+     {
+          img1: 'img/portfolio3@1x.png',
+         img2: 'img/portfolio6@1x.png',
+         project__name1: "Project Name",
+         work__name1: "photography",
+         work__name2: "photography",
+         btn1: 'work5',
+         btn2: 'work6',
+     }
+ ]
+ var portfolio__web = [
+     {
+         img1: 'img/portfolio1@1,5x.png',
+         project__name: "Project Name",
+         work__name: "Web design",
+         btn1: 'work1'
+     },
+     {
+         
+         img1: 'img/portfolio2@1,5x.png',
+         project__name: "Project Name",
+         work__name: "Web design",
+          btn1: 'work3',
+     },
+    
+ ]
+  var portfolio__UI = [
+     {
+         img1: 'img/portfolio4@1,5x.png',
+         project__name: "Project Name",
+         work__name: "UI design",
+        btn1: 'work2',
+     },
+     {
+         
+         img1: 'img/portfolio5@1,5x.png',
+         project__name: "Project Name",
+         work__name: "UI design",
+         btn1: 'work4',
+     },
+    
+ ]
+ var portfolio__photo = [
+     {
+         img1: 'img/portfolio3@1,5x.png',
+         project__name: "Project Name",
+         work__name: "Photography",
+         btn1: 'work5',
+     },
+     {
+         
+         img1: 'img/portfolio6@1,5x.png',
+         project__name: "Project Name",
+         work__name: "Photography",
+          btn1: 'work6',
+     },
+    
+ ]
+  var img = 'img/portfolio1.png'
+
+  var process = [
+      {
+          icon: 'lightbulb',
+          letter: 'r',
+          name: "Idea",
+          number: "1"
+
+      },
+      {
+          icon: 'cogs',
+          letter: 's',
+          name: "Concept",
+          number: "2"
+
+      },
+      {
+          icon: 'magic',
+          letter: 's',
+          name: "Design",
+          number: "3"
+
+      },
+      {
+          icon: 'flask',
+          letter: 's',
+          name: "Develop",
+          number: "4"
+
+      },
+      {
+          icon: 'gamepad',
+          letter: 's',
+          name: "Test",
+          number: "5"
+
+      },
+      {
+          icon: 'trophy',
+          letter: 's',
+          name: "Launch",
+          number: "6"
+
+      }
+  ]
+ 
+ var testimonial = [
+      {
+          img: 'img/Ellipse1.png',
+          text: "However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.",
+          autor: "Sam L. J. - Pulp Fiction"
+
+      },
+      {
+          img: 'img/Ellipse1.png',
+          text: "However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.",
+          autor: "Sam L. J. - Pulp Fiction"
+
+      },
+      {
+          img: 'img/Ellipse1.png',
+          text: "However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.",
+          autor: "Sam L. J. - Pulp Fiction"
+
+      }
+ ]
+    var img_logo =  [
+      {
+          img: 'img/logo-mimi-web.png',
+          index: "mimicreative.net",
+          num: "1"
+          
+
+      },
+      {
+          img: 'img/Слой1.png',
+          index: "https://www.tomatech.com",
+          num: "2"
+          
+
+      },
+      {
+          img: 'img/logo.png',
+          index: "https://pictalogi.com",
+          num: "3"
+          
+
+      }
+ ]
+
+    var blog =
+        [
+            {
+                title: "Nature is lethal but it doesn't hold a candle to man.",
+                src: "img/wp_1920.png",
+                index: "http://",
+                number: "5",
+                month: "May",
+                comments: "3 Comments    |    8 Share",
+                text: "Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do."
+            },
+            {
+                title: "Nature is lethal but it doesn't hold a candle to man.",
+                src: "img/wp_1921.png",
+                 index: "http://",
+                 number: "5",
+                 month: "May",
+                 comments: "3 Comments    |    8 Share",
+                text: "Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do."
+            },
+            {
+               title: "Nature is lethal but it doesn't hold a candle to man.",
+                src: "img/annexed_1440x900.png",
+                 index: "http://",
+                 number: "5",
+                 month: "May",
+                 comments: "3 Comments    |   8 Share",
+                text: "Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do."
+            },
+            {
+                title: "Nature is lethal but it doesn't hold a candle to man.",
+                src: "img/services.jpg",
+                 index: "http://",
+                 number: "5",
+                 month: "May",
+                 comments: "3 Comments    |    8 Share",
+                text: "Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do."
+            },
+            {
+                title: "Nature is lethal but it doesn't hold a candle to man.",
+                src: "img/works.jpg",
+                 index: "http://",
+                 number: "5",
+                 month: "May",
+                 comments: "3 Comments    |    8 Share",
+                text: "Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do."
+            },
+            {
+               title: "Nature is lethal but it doesn't hold a candle to man.",
+                src: "img/Фон.jpg",
+                 index: "http://",
+                 number: "5",
+                 month: "May",
+                 comments: "3 Comments    |    8 Share",
+                text: "Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do."
+            }
+        ]
+
+    var contact = 
+    [
+        {
+             index: "tel:+9876543210", 
+             text: "9876543210",
+             class: "tel"
+        },
+         {
+             index: "https://Sebastian@mail.com", 
+             text: "Sebastian@mail.com",
+             class: "mail"
+        },
+         {
+             index: "https://www.sebasti.an", 
+             text: "www.sebasti.an",
+             class: "web" 
+        }
+    ]
+    
+    

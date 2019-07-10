@@ -1,0 +1,23 @@
+.btn--secondary_download {
+    text-align: center;
+    padding-top: 14px;
+    width: 320px;
+    height: 55px;
+    background-color: #f1c40f;
+    border-bottom: 2px solid #b8950a;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    color: #2b2b2b;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    @media (max-width: 577px) {
+       width: 290px;
+    }
+}
+
+.download {
+    text-align: center;
+}

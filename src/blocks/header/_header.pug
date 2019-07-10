@@ -1,0 +1,12 @@
+mixin header(_title, _subtitle, _img)
+    header.header
+        .container
+            .row
+                .col-xl-6.col-sm-12
+                    .header__foto
+                       img(src=_img).header__img
+                .col-xl-6.header__text.col-sm-12
+                    h1.header__title!= _title
+                    p.header__subtitle= _subtitle
+                    if block
+                        block    

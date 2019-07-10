@@ -1,0 +1,9 @@
+mixin title(_title, _img, _title__icon, _mod= '')
+    .title
+        .container
+            h2(class= (_mod != '') ? `about__title--${_mod}` : '').justify-content-center.about__title!= _title
+            .title__img.d-flex.justify-content-center
+              img(src= _img, class= (_mod != '') ? `title__shape--${_mod}` : '').title__shape
+              .title__icon
+                  i(class=`fa-${_title__icon}`).fas
+              img(src= _img class= (_mod != '') ? `title__shape--${_mod}` : '').title__shape

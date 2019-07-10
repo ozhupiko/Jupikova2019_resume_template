@@ -1,0 +1,9 @@
+//@prepros-prepend ./blocks/burger/_burger.js;
+//@prepros-prepend ./blocks/popup/_popup.js;
+//@prepros-prepend ./blocks/menu/_menu.js;
+//@prepros-prepend ./blocks/portfolio/_portfolio.js;
+//@prepros-prepend ./blocks/testimonial/_testimonial.js;
+//@prepros-prepend ./blocks/download/_download.js;
+//@prepros-prepend ./blocks/navigation/_navigation.js;
+//@prepros-prepend ./blocks/progressBar/_progressBar.js;
+//@prepros-prepend ./blocks/process/_process.js;

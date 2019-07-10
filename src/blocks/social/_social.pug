@@ -1,0 +1,7 @@
+mixin social(_icons, _href)
+    .social
+        ul.social__list.justify-content-center
+            each icon, index in _icons
+                li.social__item
+                    a(href= _href[index], class=`social__link--${icon}`).social__link
+                        i(class=`fa-${icon}`).fab

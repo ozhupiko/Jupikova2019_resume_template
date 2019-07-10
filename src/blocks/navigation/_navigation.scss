@@ -1,0 +1,38 @@
+.navigation {
+
+    &__list {
+        text-align: center;
+        list-style: none;
+        border-bottom: 1px solid #d1d9e4;
+        padding: 81px 0 81px 0;
+        @media (max-width: 577px) {
+            padding: 22px 10px 81px 11px;
+             }
+        a {
+            text-decoration: none;
+            font-family: 'Lato', sans-serif;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 50px;
+            color: #4d4949;
+            @media (max-width: 577px) {
+            font-size: 25px;
+            line-height: 55px;
+                 }
+        }
+
+       
+    }
+}
+
+.navigation {
+    &__link--process{
+        @media (max-width: 376px) {
+            display: none;
+            position: absolute;
+                 }
+    }
+    &__link:hover {
+        color: rgb(0, 2, 128);
+    }
+}

@@ -1,0 +1,18 @@
+mixin blog(_blog)
+    div(id="blog").blog
+        .container
+            +title("blog", shape_black, 'pencil-alt', 'about')
+            .row.blog--mg
+                each item in _blog
+                    .col-xl-4.col-sm-6
+                        .blog__card
+                            a(href=item.index).blog__link
+                                img(src= item.src).blog__img
+                                .blog__data
+                                     p.number!= item.number
+                                     p.month!= item.month
+                                h3.blog__title!=item.title
+                            .blog__line1    
+                            p.blog__text!=item.text
+                            .blog__line2
+                            pre.blog__comments!= item.comments

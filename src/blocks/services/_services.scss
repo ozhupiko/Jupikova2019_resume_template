@@ -1,0 +1,97 @@
+.ellipse {
+    width: 188px;
+    height: 188px;
+    border-radius: 50%;
+    position: relative;
+
+
+    &__orange {
+        border: 10px solid #ff9560;
+        background-color: #f9671e;
+        margin: auto;
+    }
+
+    &__blue {
+        border: 10px solid #59a8ff;
+        background-color: #007aff;
+        margin: auto;
+    }
+
+    &__green {
+        border: 10px solid #41fa8f;
+        background-color: #2ecc71;
+        margin: auto;
+    }
+
+    &__violet {
+        border: 10px solid #c561ef;
+        background-color: #8e44ad;
+        margin: auto;
+    }
+}
+
+.services {
+    height: 630px;
+
+    @media (max-width: 577px) {
+        height: 1372px;
+    }
+
+    &__designation {
+        text-align: center;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 26%;
+        color: white;
+        font-size: 80px;
+        text-transform: uppercase;
+
+        &--orange {
+
+            left: 32%;
+        }
+
+        &--blue {
+
+            left: 29%;
+            top: 24%;
+            font-size: 81px;
+        }
+
+        &--green {
+
+            left: 27%;
+        }
+
+        &--violet {
+
+            left: 30%;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 168px;
+        height: 168px;
+    }
+
+    &--mg {
+        margin-top: 57px;
+
+        @media (max-width: 376px) {
+            margin-top: 20px;
+        }
+    }
+
+    &__work {
+        color: #4a4a4a;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 30px;
+
+    }
+}
