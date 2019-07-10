@@ -1,5 +1,5 @@
 .portfolio {
-    background: url("../img/images4.jpg");
+    background: url("../img/portfolio.png");
     background-size: cover;
     height: 1340px;
     padding-top: 105px;
@@ -69,6 +69,15 @@
         }
 
         @media (max-width: 450px) {
+            display: grid;
+            grid-template-columns: repeat(2, 120px);
+            margin-left: 69px;
+            margin-top: 0px;
+            text-align: center;
+
+
+        }
+        @media (max-width: 376px) {
             display: grid;
             grid-template-columns: repeat(2, 120px);
             margin-left: 45px;
