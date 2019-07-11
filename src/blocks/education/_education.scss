@@ -16,7 +16,16 @@
               @media (max-width: 450px) {
                 clip-path: polygon(0% 44px, 100% 68px, 100% 1175px, 0% 1175px);
                 margin-top: -68px;
+                height: 1120px;
                   }
+                  @media (max-width: 400px) {
+                    
+                    height: 1069px;
+                      }
+                  @media (max-width: 360px) {
+                   
+                    height: 1150px;
+                      }
           
     &__years {
         max-width: 162px;
