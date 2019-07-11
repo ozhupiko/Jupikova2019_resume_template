@@ -3,15 +3,34 @@ var targetPos = target.offset().top;
 var winHeight = $(window).height();
 var scrollToElem = targetPos - winHeight;
 
-$(document).scroll(function(){
+$(window).scroll(function(){
   var winScrollTop = $(this).scrollTop();
   
   if(winScrollTop > scrollToElem){
-    showProcess();
+    $(".process--mg").show();
+    $(".process__work1").show(600);
+    $(".process__icon1--1").delay(600).show(600);  
+    $(".process__work2").delay(1200).show(600);
+    $(".process__icon1--2").delay(1800).show(600); 
+    $(".process__work3").delay(2400).show(600);
+    $(".process__icon1--3").delay(3000).show(600); 
+    $(".process__work4").delay(3600).show(600);
+    $(".process__icon1--4").delay(4200).show(600); 
+    $(".process__work5").delay(4800).show(600);
+    $(".process__icon1--5").delay(5400).show(600); 
+    $(".process__work6").delay(6000).show(600);
+   
  
   }
 });
-
+$(window).ready(function(){
+    
+    
+    
+      $(".process--mg").hide(600);
+     
+     
+  });
 
 
 
