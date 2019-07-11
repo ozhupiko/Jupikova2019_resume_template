@@ -8,10 +8,10 @@
     position: relative;
    
           @media (max-width: 577px) {
-            clip-path: polygon(0% 0px, 100% 52px, 100% 1175px, 0% 1175px);
+            clip-path: polygon(0% 0px, 100% 52px, 100% 1227px, 0% 1227px);
             margin-top: -51px;
             padding-top: 65px;
-            height: 1175px;
+            height: 1227px;
               }
               @media (max-width: 450px) {
                 clip-path: polygon(0% 44px, 100% 68px, 100% 1175px, 0% 1175px);
@@ -26,6 +26,11 @@
                    
                     height: 1150px;
                       }
+                      @media (max-width: 360px) {
+                   
+                        height: 1174px;
+                          }
+                      
           
     &__years {
         max-width: 162px;
@@ -53,7 +58,7 @@
         padding: 10px 20px;
         border-radius: 5px 5px 0 0;
         box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5);
-        @media (max-width: 450px) {
+        @media (max-width: 577px) {
             max-width: 100%;
               }
 
@@ -68,8 +73,8 @@
             content: '';
             z-index: -1;
             @media (max-width: 577px) {
-                left: 41%;
-                top: -30%;
+                left: 46%;
+                top: -37%;
                  }
             @media (max-width: 450px) {
                 left: 43%;
@@ -120,7 +125,7 @@
             left: 43%;
             @media (max-width: 577px) {
                 width: 40%;
-    bottom: 1%;
+    bottom: 0%;
     left: 30%;
                   }
         }

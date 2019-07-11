@@ -7,8 +7,13 @@
     padding-top: 23px;
     position: relative;
 
-    @media (max-width: 450px) {
+@media (max-width: 577px) {
         margin-top: 0px;
+        clip-path: polygon(0% 0px, 100% 0px, 100% 1304px, 0% 1304px);
+        height: 1304px;
+    }
+    @media (max-width: 450px) {
+        
         clip-path: polygon(0% 0px, 100% 0px, 100% 1200px, 0% 1200px);
         height: 1200px;
     }
@@ -25,12 +30,15 @@
 
         @media (max-width: 577px) {
             font-size: 15px;
+            max-width: 100%;
+            margin-top: 30px;
+            
         }
 
-        @media (max-width: 450px) {
-            margin-top: 30px;
-            max-width: 100%;
-        }
+        // @media (max-width: 450px) {
+        //     margin-top: 30px;
+        //     max-width: 100%;
+        // }
     }
 
 
@@ -47,12 +55,14 @@
 
         @media (max-width: 577px) {
             padding: 10px;
-        }
-
-        @media (max-width: 450px) {
             height: 265px;
 
         }
+
+        // @media (max-width: 450px) {
+        //     height: 265px;
+
+        // }
     }
 
     &--mg {

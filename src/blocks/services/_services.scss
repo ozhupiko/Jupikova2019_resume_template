@@ -34,6 +34,9 @@
     height: 630px;
 
     @media (max-width: 577px) {
+        height: 964px;
+    }
+    @media (max-width: 450px) {
         height: 1372px;
     }
 

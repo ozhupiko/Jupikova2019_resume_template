@@ -8,12 +8,12 @@
 
     @media (max-width: 577px) {
         margin-top: -30px;
-        clip-path: polygon(0% 0px, 100% 31px, 100% 867px, 0% 898px);
         padding-top: 38px;
-        height: 898px;
+        clip-path: polygon(0% 0px, 100% 31px, 100% 999px, 0% 1029px);
+    height: 1029px;
     }
 
-    @media (max-width: 577px) {
+    @media (max-width: 450px) {
         margin-top: -30px;
         clip-path: polygon(0% 0px, 100% 31px, 100% 917px, 0% 947px);
         height: 963px;

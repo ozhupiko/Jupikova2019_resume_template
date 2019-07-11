@@ -1,5 +1,21 @@
+var target = $('.process__work1');
+var targetPos = target.offset().top;
+var winHeight = $(window).height();
+var scrollToElem = targetPos - winHeight;
 
-$(document).scroll(function showProcess(){
+$(window).scroll(function(){
+  var winScrollTop = $(this).scrollTop();
+  
+  if(winScrollTop > scrollToElem){
+    showProcess();
+  
+  }
+});
+
+
+
+
+function showProcess(){
     $(".process__work1").show(600);
     $(".process__icon1--1").show(1000);  
     $(".process__work2").show(1400);
@@ -13,5 +29,5 @@ $(document).scroll(function showProcess(){
     $(".process__work6").show(4600);
    
    
-    });
+    };
     

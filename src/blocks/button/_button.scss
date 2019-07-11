@@ -63,9 +63,13 @@
             padding: 0px 26px;
             border: 1px solid white;
             font-size: 15px;
+            margin-top: 5px
                }
         @media (max-width: 376px) {
-            margin-top: 0px;
+            margin-top: 18px;
                 }
+                @media (max-width: 330px) {
+                    margin-top: 3px;
+                        }
     }
 }
