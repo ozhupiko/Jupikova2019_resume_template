@@ -1,101 +1,152 @@
 var target = $('.dws-progress-bar1');
 var targetPos = target.offset().top;
 var winHeight = $(window).height();
-var scrollToElem = targetPos - winHeight;
-// $(window).scroll(function(){
-//   var winScrollTop = $(this).scrollTop();
-//   if(winScrollTop > scrollToElem){
-//     //сработает когда пользователь доскроллит к элементу с классом .elem
-//   }
-// });
+var scrollToElem = targetPos - winHeight/2;
 
+var marker = true;
 
-$(window).scroll(function () {
+function count() {
+  $(".dws-progress-bar1").circularProgress({
+    color: "#fff",
+    line_width: 18,
+    height: "250px",
+    width: "250px",
+    percent: 0,
+    counter_clockwise: false,
+    starting_position: 0
+  }).circularProgress('animate', 75, 10000);
+    marker = false;
+}
+
+$(window).on("scroll", function () {
     var winScrollTop = $(this).scrollTop();
   if(winScrollTop > scrollToElem){
-    $(".dws-progress-bar1").circularProgress({
-        color: "#fff",
-        line_width: 18,
-        height: "250px",
-        width: "250px",
-        percent: 0,
-        counter_clockwise: false,
-        starting_position: 0
-    }).circularProgress('animate', 75, 10000);}
+    if ( marker ) {
+      count();
+  }
+    }
+    
 });
 
-$(window).scroll(function () {
+var marker2 = true;
+
+function count2() {
+  $(".dws-progress-bar2").circularProgress({
+    color: "#fff",
+    line_width: 18,
+    height: "250px",
+    width: "250px",
+    percent: 0,
+    counter_clockwise: false,
+    starting_position: 0
+  }).circularProgress('animate', 68, 10000);
+    marker2 = false;
+}
+
+$(window).on("scroll", function () {
     var winScrollTop = $(this).scrollTop();
   if(winScrollTop > scrollToElem){
-    $(".dws-progress-bar2").circularProgress({
-        color: "#fff",
-        line_width: 18,
-        height: "250px",
-        width: "250px",
-        percent: 0,
-        counter_clockwise: false,
-        starting_position: 0
-
-    }).circularProgress('animate', 68, 10000);}
-
+    if ( marker2 ) {
+      count2();
+  }
+    }
+    
 });
-$(window).scroll(function () {
+var marker3 = true;
+
+function count3() {
+  $(".dws-progress-bar3").circularProgress({
+    color: "#fff",
+    line_width: 18,
+    height: "250px",
+    width: "250px",
+    percent: 0,
+    counter_clockwise: false,
+    starting_position: 0
+  }).circularProgress('animate', 50, 10000);
+    marker3 = false;
+}
+
+$(window).on("scroll", function () {
     var winScrollTop = $(this).scrollTop();
   if(winScrollTop > scrollToElem){
-    $(".dws-progress-bar3").circularProgress({
-        color: "#fff",
-        line_width: 18,
-        height: "250px",
-        width: "250px",
-        percent: 0,
-        counter_clockwise: false,
-        starting_position: 0
-
-    }).circularProgress('animate', 50, 10000);}
-
+    if ( marker3 ) {
+      count3();
+  }
+    }
+    
 });
-$(window).scroll(function () {
+var marker4 = true;
+
+function count4() {
+  $(".dws-progress-bar4").circularProgress({
+    color: "#fff",
+    line_width: 18,
+    height: "250px",
+    width: "250px",
+    percent: 0,
+    counter_clockwise: false,
+    starting_position: 0
+  }).circularProgress('animate', 90, 10000);
+    marker4 = false;
+}
+
+$(window).on("scroll", function () {
     var winScrollTop = $(this).scrollTop();
   if(winScrollTop > scrollToElem){
-    $(".dws-progress-bar4").circularProgress({
-        color: "#fff",
-        line_width: 18,
-        height: "250px",
-        width: "250px",
-        percent: 0,
-        counter_clockwise: false,
-        starting_position: 0
-
-    }).circularProgress('animate', 95, 10000);}
-
+    if ( marker4 ) {
+      count4();
+  }
+    }
+    
 });
-$(window).scroll(function () {
+var marker5 = true;
+
+function count5() {
+  $(".dws-progress-bar5").circularProgress({
+    color: "#fff",
+    line_width: 18,
+    height: "250px",
+    width: "250px",
+    percent: 0,
+    counter_clockwise: false,
+    starting_position: 0
+  }).circularProgress('animate', 80, 10000);
+    marker5 = false;
+}
+
+$(window).on("scroll", function () {
     var winScrollTop = $(this).scrollTop();
   if(winScrollTop > scrollToElem){
-    $(".dws-progress-bar5").circularProgress({
-        color: "#fff",
-        line_width: 18,
-        height: "250px",
-        width: "250px",
-        percent: 0,
-        counter_clockwise: false,
-        starting_position: 0
-
-    }).circularProgress('animate', 80, 10000);}
-
+    if ( marker5 ) {
+      count5();
+  }
+    }
+    
 });
-$(window).scroll(function () {
+
+
+var marker6 = true;
+
+function count6() {
+  $(".dws-progress-bar6").circularProgress({
+    color: "#fff",
+    line_width: 18,
+    height: "250px",
+    width: "250px",
+    percent: 0,
+    counter_clockwise: false,
+    starting_position: 0
+  }).circularProgress('animate', 100, 10000);
+    marker6 = false;
+}
+
+$(window).on("scroll", function () {
     var winScrollTop = $(this).scrollTop();
   if(winScrollTop > scrollToElem){
-    $(".dws-progress-bar6").circularProgress({
-        color: "#fff",
-        line_width: 18,
-        height: "250px",
-        width: "250px",
-        percent: 0,
-        counter_clockwise: false,
-        starting_position: 0
-
-    }).circularProgress('animate', 100, 10000);}
-
+    if ( marker6 ) {
+      count6();
+  }
+    }
+    
 });
