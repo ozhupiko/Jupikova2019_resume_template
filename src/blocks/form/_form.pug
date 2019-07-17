@@ -1,7 +1,8 @@
-mixin input(_placeholder, _type)
+mixin input(_placeholder, _type, _value, _class)
     .form__control
-        input(type=_type, placeholder=_placeholder).form__input
+        input(type=_type, value=_value, placeholder=_placeholder, required, class=_class ).form__input
 
 mixin textarea(_placeholder)
     .form__control
         textarea(placeholder=_placeholder).form__input.form__input--textarea
+

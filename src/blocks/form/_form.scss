@@ -15,6 +15,9 @@
     border: 1px solid #b7c0c9;
 
 }
+input:invalid:not(:placeholder-shown) {border-color: red;}
+  
+input:valid:not(:placeholder-shown) {border-color: green;}
 
 .form__input::placeholder {
     color: #5a5a5a;
@@ -40,19 +43,19 @@
         padding: 0 20%;
     }
 
-    .btn--secondary_send {
+    .form__input.btn--secondary_send {
         text-align: center;
-        padding-top: 14px;
+        padding:  0  !important;
         width: 320px;
         height: 55px;
         background-color: inherit;
-        border: 2px solid #36967e;
+        border: 2px solid #336967 !important;
         color: #36967e;
         font-family: 'Lato', sans-serif;
         font-size: 20px;
         font-weight: 700;
         text-transform: uppercase;
-        margin-top: 30px;
+        margin: 30px 0 0 0 !important;
 
         @media (max-width: 577px) {
             width: 290px;

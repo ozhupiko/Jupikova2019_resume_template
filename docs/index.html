@@ -578,12 +578,12 @@
               <div class="row">
                 <div class="col-xl-6 col-sm-12">
                   <div class="form__control">
-                    <input class="form__input" type="text" placeholder="Name"/>
+                    <input class="form__input" type="text" placeholder="Name" required="required"/>
                   </div>
                 </div>
                 <div class="col-xl-6 col-sm-12">
                   <div class="form__control">
-                    <input class="form__input" type="email" placeholder="Email"/>
+                    <input class="form__input" type="email" placeholder="Email" required="required"/>
                   </div>
                 </div>
                 <div class="col-12">
@@ -592,7 +592,10 @@
                   </div>
                 </div>
               </div>
-              <div class="form__submit"><a class="btn btn--secondary_send" href="https://Sebastian@mail.com" title="Send" download="download">Send</a>
+              <div class="form__submit">
+                <div class="form__control">
+                  <input class="btn--secondary_send btn1 form__input" type="submit" value="send" placeholder="submit" required="required"/>
+                </div>
               </div>
             </form>
           </div>
